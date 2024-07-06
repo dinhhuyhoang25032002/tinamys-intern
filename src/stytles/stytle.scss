@@ -1,0 +1,105 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+
+    //  padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    box-sizing: border-box;
+   // overflow-x: hidden;
+
+    .text {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+
+        &.weg {
+            font-weight: 600;
+        }
+
+        &.weg-1 {
+            font-weight: 700;
+        }
+
+        &.fs-18 {
+            font-size: 18px;
+        }
+
+        &.fs-16 {
+            font-size: 16px;
+        }
+
+        &.fs-15 {
+            font-size: 15px;
+        }
+
+        &.fs-14 {
+            font-size: 14px;
+        }
+
+        &.fs-13 {
+            font-size: 13px;
+        }
+
+        &.fs-12 {
+            font-size: 12px;
+        }
+
+    }
+
+    .image-contain {
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .image-cover {
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .po-re {
+        position: relative;
+    }
+
+    .po-ab {
+        position: absolute;
+    }
+
+    .flex-ce {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fle-left {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .wid-100 {
+        width: 100%;
+    }
+
+    .wid-50 {
+        width: 50%;
+    }
+
+    .hei-50 {
+        height: 50%;
+    }
+
+    .hei-100 {
+        height: 100%;
+    }
+}

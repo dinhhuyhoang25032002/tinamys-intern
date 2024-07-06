@@ -1,0 +1,51 @@
+// .container {
+//     display: flex;
+//     margin-top: 0px !important;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: greenyellow;
+//     padding: 50px;
+
+//     .body-1 {
+//         display: flex;
+
+//         width: 100%;
+//         height: fit-content;
+//         background-color: rgb(36, 92, 138);
+//         padding: 50px;
+
+//         .content {
+//             display: flex;
+
+//             width: 100%;
+//             height: fit-content;
+//             padding: 50px;
+//             background-color: red;
+
+//             .content-left {
+//                 width: 50%;
+//                 height: 100px;
+//                 background-color: yellow;
+//                 transition: height 1s ease-in-out;
+
+//                 &.active {
+//                     height: 200px;
+//                 }
+//             }
+
+//             .content-right {
+//                 width: 50%;
+//                 height: 100px;
+//                 background-color: green;
+
+//                 &.active {
+//                     height: 200px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// .slider-container {
+//     width: 100vw;
+//     height: 352px;
+// }

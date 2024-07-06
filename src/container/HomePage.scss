@@ -1,0 +1,196 @@
+.container-homepage {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    min-width: 374px !important;
+
+    .header-container {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: white;
+    }
+
+    .body-homepage {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .container-section-one {
+                width: 100%;
+                height: 980px;
+                display: flex;
+                background: url("../assets/background/background-one.c5f2ed05.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                max-width: 1792px;
+                margin: 0 auto;
+
+
+            }
+
+            .container-section-two {
+                width: 100%;
+                height: 559px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-section-six {
+                width: 100%;
+                height: 650px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-section-eight {
+                width: 100%;
+                height: 559px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-section-nine {
+                width: 100%;
+                height: 850px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-top: 90px;
+
+            }
+
+            .container-section-ten {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .go-top {
+        display: block;
+        position: fixed;
+        right: 4px;
+        bottom: 45px;
+        padding: 7px 14px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #71acd1;
+        border: none;
+        outline: none;
+        font-size: 27px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.active {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width:75em) {
+    .body-homepage {
+        .content {
+            .container-section-one {
+                height: 800px !important;
+                background: url("../assets/background/background-one-mobile.5930a422.png") !important;
+                background-color: #f2faff !important;
+
+                background-repeat: no-repeat;
+                background-size: contain;
+                max-width: 1700px;
+                margin: 0 auto;
+            }
+
+            .container-section-two {
+                height: 430px !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:35.5em) and (max-width:47.9375em) {
+    .container-homepage {
+        .body-homepage {
+            .content {
+                .container-section-one {
+                    height: 470px !important;
+                }
+
+                .container-section-two {
+                    height: 400px;
+                }
+
+                .container-section-six {
+                    height: 620px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 35.5em) {
+    .container-homepage {
+        .body-homepage {
+            .content {
+                .container-section-one {
+                    height: 600px !important;
+                }
+
+                .container-section-two {
+                    height: 550px !important;
+                }
+
+                .container-section-six {
+                    height: 400px;
+                }
+
+                .container-section-eight {
+                    width: 100%;
+                    height: 439px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+
+                .container-section-nine {
+                    width: 100%;
+                    height: 900px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin-top: 0px;
+
+                }
+            }
+        }
+    }
+}

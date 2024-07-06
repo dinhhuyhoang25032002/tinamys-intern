@@ -1,0 +1,140 @@
+.body-header {
+    display: flex;
+    width: 100%;
+    height: 67px;
+    box-shadow: 2px 2px 5px 0 #f0f1f2;
+
+
+    .content-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px 70px;
+        padding-right: 23px;
+
+        .logo-header {
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .container-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .experience {
+                background-color: rgb(28 127 255);
+                border: none;
+                outline: none;
+                width: 108px;
+                height: 30px;
+                border-radius: 4px;
+                color: white;
+                padding: 0px 14px;
+                margin-left: 9px;
+                font-size: 12px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 16px;
+                gap: 10px;
+                width: 169px;
+
+                .bx-phone-call {
+                    font-size: 19px;
+                    color: #83aafd;
+                }
+
+                .text-contact {
+                    display: flex;
+                    flex-direction: column;
+
+                    .text {
+                        font-size: small;
+                        font-weight: 600;
+                        font-family: "Inter", sans-serif;
+                    }
+                }
+            }
+
+            .flag-icon {
+                width: 38px;
+                height: 38px;
+                cursor: pointer;
+            }
+
+            //tooltip
+
+            .container-option {
+                background-color: white;
+
+                .content-option {
+                    .language {
+                        display: flex;
+                        gap: 10px;
+                        justify-content: start;
+                        align-items: center;
+                        color: black;
+                        font-size: small;
+                        font-weight: 600;
+                        font-family: "Inter", sans-serif;
+                        padding: 2px 7px;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-radius: 3px;
+                            background-color: #f0f1f2;
+                        }
+                    }
+                }
+            }
+
+            #option-language {
+                background-color: white;
+                z-index: 2;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// smartphone reponsive
+
+@media only screen and (max-width: 35.5em) {
+    .body-header {
+        .content-header {
+            .container-item {
+
+                .googleplay,
+                .experience,
+                .contact {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+//tablet reponsive
+@media only screen and (min-width: 35.5em) and (max-width:47.9375em) {
+    .body-header {
+        .content-header {
+            .container-item {
+                .experience {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

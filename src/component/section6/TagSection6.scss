@@ -1,0 +1,93 @@
+.container-tag {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 18px;
+    box-shadow: 0 8px 16px 0 rgba(146, 152, 198, .08);
+    border-radius: 20px;
+    background-color: #fff;
+    transition-delay: 300ms;
+    transition-property: all;
+    transition-duration: 0.25s;
+    height: 150px;
+    width: 250px;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.08);
+        image-rendering: auto;
+    }
+
+    .icon-secton-6 {
+        width: 45px;
+        height: 56px;
+    }
+
+    .title {
+        margin: 0px 0px 5px;
+        font-size: 21px;
+    }
+
+    .content-tag {
+        line-height: 22px;
+        display: flex;
+        align-items: flex-start !important;
+        flex-direction: column;
+        height: fit-content !important;
+        width: 210px !important;
+
+        .content-feeback {
+            display: flex;
+            align-items: flex-start !important;
+            width: 200px !important;
+
+            height: 60px !important;
+        }
+    }
+
+}
+
+@media screen and (min-width:26em) and (max-width: 39.5em) {
+    .container-tag {
+        .icon-secton-6 {
+            width: 25px;
+            height: 25px;
+        }
+
+        .title {
+            margin: 3px 0px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .content-tag {
+            line-height: 14px;
+            font-size: 12px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 26em) {
+    .container-tag {
+        padding: 25px 25px 20px;
+
+        .icon-secton-6 {
+            width: 25px;
+            height: 25px;
+        }
+
+        .title {
+            margin: 3px 0px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .content-tag {
+            line-height: 14px;
+            font-size: 12px;
+        }
+    }
+}
