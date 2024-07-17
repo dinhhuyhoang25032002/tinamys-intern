@@ -9,7 +9,7 @@ type PropTagSection = {
 const TagSection6 = ({ icon, title, content, style }: PropTagSection) => {
   return (
     <div className="container-tag" style={style}>
-      {icon && <img src={icon} className="icon-secton-6" />}
+      {icon && <img src={icon} className="icon-secton-6" loading="lazy" />}
       <div className="content-tag">
         <h1 className="text weg  title">{title}</h1>
         <div className="text  content-feeback">{content}</div>

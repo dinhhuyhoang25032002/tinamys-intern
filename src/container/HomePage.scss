@@ -1,131 +1,178 @@
 .container-homepage {
-
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: fit-content;
-    min-width: 374px !important;
+    align-items    : center;
+    width          : 100vw;
+    height         : fit-content;
+    min-width      : 374px !important;
 
     .header-container {
-        width: 100%;
-        position: sticky;
-        top: 0;
-        z-index: 5;
+        width           : 100%;
+        position        : sticky;
+        top             : 0;
+        z-index         : 5;
         background-color: white;
     }
 
     .body-homepage {
-        display: flex;
+        display  : flex;
         flex-grow: 1;
         flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
+        width    : 100%;
+        height   : 100%;
 
         .content {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            flex-wrap: wrap;
+            display        : flex;
+            flex-direction : column;
+            flex-grow      : 1;
+            flex-wrap      : wrap;
             justify-content: center;
-            align-items: center;
+            align-items    : center;
 
             .container-section-one {
-                width: 100%;
-                height: 980px;
-                display: flex;
-                background: url("../assets/background/background-one.c5f2ed05.png");
+                width              : 100%;
+                height             : 980px;
+                display            : flex;
+                background         : url("../assets/background/background-one.c5f2ed05.png");
                 background-position: top;
-                background-repeat: no-repeat;
-                background-size: contain;
-                max-width: 1792px;
-                margin: 0 auto;
-
-
+                background-repeat  : no-repeat;
+                background-size    : contain;
+                max-width          : 1792px;
+                margin             : 0 auto;
             }
 
             .container-section-two {
-                width: 100%;
-                height: 559px;
-                display: flex;
+                width          : 100%;
+                height         : fit-content;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
             }
 
             .container-section-six {
-                width: 100%;
-                height: 650px;
-                display: flex;
+                width          : 100%;
+                height         : 650px;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
             }
 
             .container-section-eight {
-                width: 100%;
-                height: 559px;
-                display: flex;
+                width          : 100%;
+                height         : 559px;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
             }
 
             .container-section-nine {
-                width: 100%;
-                height: 850px;
-                display: flex;
+                width          : 100%;
+                height         : 850px;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
 
                 margin-top: 90px;
-
             }
 
             .container-section-ten {
-                width: 100%;
-                height: fit-content;
-                display: flex;
+                width          : 100%;
+                height         : fit-content;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
+            }
+
+            .container-footer {
+                width          : 100%;
+                height         : fit-content;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
             }
         }
     }
 
-    .go-top {
-        display: block;
-        position: fixed;
-        right: 4px;
-        bottom: 45px;
-        padding: 7px 14px;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #71acd1;
-        border: none;
-        outline: none;
-        font-size: 27px;
+    .container-btn-right {
+        display                   : flex;
+        flex-direction            : column;
+        justify-content           : center;
+        align-items               : flex-end;
+        position                  : fixed;
+        right                     : 0px;
+        bottom                    : 45px;
+        transition-property       : width, opacity;
+        transition-duration       : 0.25s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        overflow                  : hidden;
+        opacity                   : 1;
+        width                     : 52px;
+        border-top-left-radius    : 5px;
+        border-bottom-left-radius : 5px;
 
-        &:hover {
-            opacity: 0.8;
+        .btn-fix {
+            display            : flex;
+            justify-content    : flex-end;
+            align-items        : center;
+            padding            : 7px 14px;
+            //  width          : 52px;
+            height             : 48px;
+            cursor             : pointer;
+            border             : none;
+            outline            : none;
+            font-size          : 27px;
+            gap                : 14px;
+            opacity            : 0.8;
+
+            &:hover {
+                color           : white !important;
+                opacity         : 1;
+                background-color: #ddc320;
+                width           : 157px;
+            }
+
+            .text {
+                width     : 80px;
+                text-align: start;
+            }
+
+            .icon-btn {
+                font-size  : 20px;
+                font-weight: 200;
+            }
+
+            &.active {
+                display: none !important;
+            }
         }
 
-        &.active {
+
+        .active {
             display: none !important;
         }
+
+        &:hover {
+            width: 142px;
+        }
+
+
     }
+
 }
 
-@media screen and (max-width:75em) {
+@media screen and (max-width: 75em) {
     .body-homepage {
         .content {
             .container-section-one {
-                height: 800px !important;
-                background: url("../assets/background/background-one-mobile.5930a422.png") !important;
+                height          : 800px !important;
+                background      : url("../assets/background/background-one-mobile.5930a422.png") !important;
                 background-color: #f2faff !important;
 
                 background-repeat: no-repeat;
-                background-size: contain;
-                max-width: 1700px;
-                margin: 0 auto;
+                background-size  : contain;
+                max-width        : 1700px;
+                margin           : 0 auto;
             }
 
             .container-section-two {
@@ -135,8 +182,7 @@
     }
 }
 
-
-@media screen and (min-width:35.5em) and (max-width:47.9375em) {
+@media screen and (min-width: 35.5em) and (max-width: 47.9375em) {
     .container-homepage {
         .body-homepage {
             .content {
@@ -150,6 +196,11 @@
 
                 .container-section-six {
                     height: 620px;
+                }
+
+                .container-footer {
+                    height: 700px;
+                    align-items: flex-start;
                 }
             }
         }
@@ -165,7 +216,7 @@
                 }
 
                 .container-section-two {
-                    height: 550px !important;
+                    height: fit-content !important;
                 }
 
                 .container-section-six {
@@ -173,22 +224,20 @@
                 }
 
                 .container-section-eight {
-                    width: 100%;
-                    height: 439px;
-                    display: flex;
+                    width          : 100%;
+                    height         : 400px;
+                    display        : flex;
                     justify-content: center;
-                    align-items: flex-start;
+                    align-items    : flex-start;
                 }
 
                 .container-section-nine {
-                    width: 100%;
-                    height: 900px;
-                    display: flex;
+                    width          : 100%;
+                    height         : 900px;
+                    display        : flex;
                     justify-content: center;
-                    align-items: center;
-
-                    margin-top: 0px;
-
+                    align-items    : center;
+                    margin-top     : 0px;
                 }
             }
         }

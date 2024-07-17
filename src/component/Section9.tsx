@@ -25,8 +25,8 @@ const settings = {
   variableWidth: true,
   initialSlide: 0,
   speed: 600,
-  // autoplay: true,
-  // autoplaySpeed: 1000,
+  autoplay: true,
+  autoplaySpeed: 6000,
   focusOnSelect: true,
   // responsive: [
   //   {
@@ -98,6 +98,7 @@ const Section9 = () => {
           <div className="container-image">
             <img
               src={imageSection9}
+              loading="lazy"
               className="image-contain wid-100 hei-100"
             />
           </div>

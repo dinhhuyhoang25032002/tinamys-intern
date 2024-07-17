@@ -15,15 +15,18 @@ const SectionThree = () => {
             className="  image-contain"
             src={imgageSecThree}
             width="80%"
+            loading="lazy"
           />
           <img
             src={iphone3}
+            loading="lazy"
             alt="image-section-two"
             className="image-iphone img  image-contain"
             width="80%"
           />
           <img
             src={imageIcon}
+            loading="lazy"
             className="po-ab image-contain image-icon"
             width={65}
             height={55}

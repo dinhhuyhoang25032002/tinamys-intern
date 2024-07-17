@@ -1,46 +1,46 @@
 .body-section-8 {
-    width: 100%;
-    height: calc(100% - 60px);
-    margin: 30px 90px 90px;
+    width        : 100%;
+    height       : calc(100% - 60px);
+    margin       : 30px 90px 90px;
     border-radius: 25px;
 
-    background: url('../assets/background/background-section-8.png');
+    background         : url('../assets/background/background-section-8.png');
     background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
 
     .content-section-8 {
         position: relative;
-        padding: 80px 0 0 100px;
-        width: 100%;
+        padding : 80px 0 0 100px;
+        width   : 100%;
 
 
         .title {
-            color: white;
-            width: 55%;
+            color      : white;
+            width      : 55%;
             line-height: 40px;
-            font-size: 19px;
+            font-size  : 19px;
         }
 
         .content-text {
-            color: white;
-            width: 46%;
+            color       : white;
+            width       : 46%;
             word-spacing: 6px;
-            font-size: 18px;
-            line-height: 28px;
+            font-size   : 18px;
+            line-height : 28px;
         }
 
         .container-btn {
-            display: flex;
-            gap: 30px;
+            display   : flex;
+            gap       : 30px;
             margin-top: 28px;
 
             .image-contain {
-                width: 144px;
-                height: 48px;
+                width          : 144px;
+                height         : 48px;
                 object-position: bottom;
 
                 &.btn-gg {
@@ -51,16 +51,16 @@
         }
 
         .container-img {
-            width: 45%;
-            height: 118%;
-            position: absolute;
-            bottom: -110px;
-            right: 0;
-            cursor: pointer;
-            transition-property: all;
+            width                     : 45%;
+            height                    : 118%;
+            position                  : absolute;
+            bottom                    : -110px;
+            right                     : 0;
+            cursor                    : pointer;
+            transition-property       : all;
             transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-            transition-duration: 250ms;
-            transition-delay: 100ms;
+            transition-duration       : 250ms;
+            transition-delay          : 100ms;
 
             &:hover {
                 transform: scale(1.08);
@@ -79,27 +79,27 @@
 
             .title {
                 line-height: 40px;
-                width: 58%;
+                width      : 58%;
 
                 .text {
                     margin-top: 0;
-                    font-size: 29px;
+                    font-size : 29px;
                 }
             }
 
             .content-text {
-                font-size: 16px;
-                line-height: 24px;
+                font-size   : 16px;
+                line-height : 24px;
                 word-spacing: 5px;
-                width: 48%;
+                width       : 48%;
             }
 
             .container-btn {
-                gap: 25px;
+                gap       : 25px;
                 margin-top: 24px;
 
                 .image-contain {
-                    width: 128px;
+                    width : 128px;
                     height: 40px;
 
                     &.btn-gg {
@@ -111,7 +111,7 @@
             .container-img {
                 height: 343px;
                 bottom: -155px;
-                top: auto;
+                top   : auto;
             }
         }
     }
@@ -127,27 +127,27 @@
             padding: 40px 0 0 60px;
 
             .title {
-                width: 56%;
+                width      : 56%;
                 line-height: 29px;
 
                 .text {
                     margin-bottom: 9px;
-                    font-size: 20px;
+                    font-size    : 20px;
                 }
             }
 
             .content-text {
-                font-size: 13px;
-                line-height: 20px;
+                font-size   : 13px;
+                line-height : 20px;
                 word-spacing: 4px;
             }
 
             .container-btn {
-                gap: 25px;
+                gap       : 25px;
                 margin-top: 24px;
 
                 .image-contain {
-                    width: 106px;
+                    width : 106px;
                     height: 36px;
 
                     &.btn-gg {
@@ -158,9 +158,9 @@
 
             .container-img {
                 position: absolute;
-                width: 50%;
-                bottom: -175px;
-                top: auto;
+                width   : 50%;
+                bottom  : -175px;
+                top     : auto;
 
             }
         }
@@ -169,8 +169,8 @@
 
 @media screen and (max-width: 35.5em) {
     .body-section-8 {
-        margin: 30px 0 40px;
-        height: 70%;
+        margin       : 30px 0 40px;
+        height       : 70%;
         border-radius: 0%;
 
 
@@ -178,29 +178,29 @@
             padding: 10px 0 0 40px;
 
             .title {
-                width: 100%;
+                width      : 100%;
                 line-height: 29px;
 
                 .text {
                     margin-bottom: 4px;
-                    font-size: 18px;
+                    font-size    : 18px;
                 }
             }
 
             .content-text {
-                font-size: 12px;
-                line-height: 18px;
+                font-size   : 12px;
+                line-height : 18px;
                 word-spacing: 4px;
-                width: 59%;
+                width       : 59%;
             }
 
             .container-btn {
-                gap: 10px;
-                margin-top: 24px;
+                gap           : 10px;
+                margin-top    : 24px;
                 flex-direction: column;
 
                 .image-contain {
-                    width: 106px;
+                    width : 106px;
                     height: 36px;
 
                     &.btn-gg {
@@ -211,10 +211,10 @@
 
             .container-img {
                 position: absolute;
-                bottom: -55px;
-                top: auto;
-                width: 41%;
-                height: 263px;
+                bottom  : -55px;
+                top     : auto;
+                width   : 41%;
+                height  : 263px;
 
 
                 .image-contain {

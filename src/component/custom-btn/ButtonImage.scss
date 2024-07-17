@@ -1,17 +1,17 @@
 .googleplay {
     background-color: transparent;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    outline: none;
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-    border-radius: 5px;
+    padding         : 0px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    border          : none;
+    outline         : none;
+    width           : fit-content;
+    height          : fit-content;
+    cursor          : pointer;
+    border-radius   : 5px;
 
     .image-contain {
-        border-radius: 5px
+        border-radius: 5px;
     }
 }

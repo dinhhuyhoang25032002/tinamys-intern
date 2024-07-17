@@ -11,12 +11,14 @@ const SectionFour = () => {
             alt="image-section-four"
             className="img image-contain "
             width="80%"
+            loading="lazy"
           />
           <img
             src={iphone4}
             alt="image-section-four"
             className="img image-contain image-iphone "
             width="80%"
+            loading="lazy"
           />
         </div>
         <div className="content-right">

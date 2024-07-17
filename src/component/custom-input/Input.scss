@@ -1,0 +1,22 @@
+.form-inp {
+    margin       : 8px 0px 8px;
+    font-size    : 15px;
+    border       : 1px solid #929395;
+    border-radius: 8px;
+    padding      : 0px 15px;
+    outline      : 1px solid transparent;
+
+    &:focus {
+        border : 1px solid #7ec1ff;
+        outline: 1px solid #7ec1ff;
+    }
+
+    &.error {
+        border : 1px solid rgba(255, 38, 0, .5);
+        outline: 1px solid rgba(255, 38, 0, .5);
+    }
+
+    &::placeholder {
+        opacity: 0.8;
+    }
+}

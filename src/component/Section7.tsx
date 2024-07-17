@@ -57,6 +57,7 @@ const Section7 = () => {
             src={imageSection7}
             className="image-contain wid-100 hei-100"
             alt="image-section-7"
+            loading="lazy"
           />
         </div>
       </div>

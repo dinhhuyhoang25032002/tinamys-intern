@@ -12,11 +12,13 @@ const SectionTwo = () => {
             className="image-contain img "
             width={"90%"}
             height={"100%"}
+            loading="lazy"
           />
           <img
             src={imageIP2}
             alt="image-section-two"
             className="image-iphone img wid-100 image-contain"
+              loading="lazy"
           />
         </div>
         <div className="content-right ">

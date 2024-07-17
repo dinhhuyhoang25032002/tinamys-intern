@@ -16,9 +16,11 @@ const SectionFive = () => {
             width="100%"
             height={"85%"}
             style={{ marginTop: 90 }}
+            loading="lazy"
           />
           <img
             src={iphone3}
+            loading="lazy"
             alt="image-section-five"
             className="image-iphone img image-contain"
             width="80%"

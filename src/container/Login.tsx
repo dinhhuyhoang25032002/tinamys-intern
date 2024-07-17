@@ -1,13 +1,13 @@
 import "./Login.scss";
 import logoPage from "../assets/logo/logoPage.svg";
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback } from "react";
 import BtnText from "../component/custom-btn/BtnText";
 import logoF from "../assets/logo/f.png";
 import logoG from "../assets/logo/g.png";
 import { Link } from "react-router-dom";
-import { ErrorMessage, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
-
+import Input from "../component/custom-input/Input";
 const Login = () => {
   const [isShow, setShow] = useState(false);
   const formik = useFormik({
@@ -19,10 +19,11 @@ const Login = () => {
     validationSchema: Yup.object({
       email: Yup.string()
         .email("Invalid Email")
-        .required("You must fill in this section!"),
+        .required("Email không được để trống"),
       password: Yup.string()
         .min(8, "Your password must be at least 8 character!")
-        .max(29, "Your password must be under 29 character!"),
+        .max(29, "Your password must be under 29 character!")
+        .required("Mật khẩu không được để trống"),
     }),
 
     onSubmit: (values) => {
@@ -61,14 +62,18 @@ const Login = () => {
                 </div>
 
                 <div className="wid-100 po-re flex-ce">
-                  <input
-                    type="email"
+                  <Input
+                    type={"email"}
                     className={
-                      formik.errors.email ? "form-inp error" : "form-inp"
+                      formik.errors.email && formik.touched.email
+                        ? formik.errors.email
+                        : undefined
                     }
                     name="email"
                     value={formik.values.email}
                     onChange={formik.handleChange}
+                    placeholder="Email hoặc tên tài khoản"
+                    style={{ width: "100%", height: 45 }}
                   />
                 </div>
               </div>
@@ -85,14 +90,18 @@ const Login = () => {
                   className="po-re flex-ce wid-100"
                   style={{ height: "fit-content" }}
                 >
-                  <input
+                  <Input
                     type={isShow === true ? "text" : "password"}
                     className={
-                      formik.errors.password ? "form-inp error" : "form-inp "
+                      formik.errors.password && formik.touched.password
+                        ? formik.errors.password
+                        : undefined
                     }
                     name="password"
                     value={formik.values.password}
                     onChange={formik.handleChange}
+                    placeholder="Mật khẩu"
+                    style={{ width: "100%", height: 45 }}
                   />
                   <div
                     className="eye po-ab"
@@ -120,7 +129,6 @@ const Login = () => {
               </div>
               {formik.errors.password && formik.touched.password && (
                 <span style={{ color: "red" }} className="text  fs-13">
-                
                   {formik.errors.password}
                 </span>
               )}

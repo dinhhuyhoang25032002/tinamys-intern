@@ -1,45 +1,45 @@
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
-$slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
-$slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
+$slick-font-path         : "./fonts/" !default;
+$slick-font-family       : "slick" !default;
+$slick-loader-path       : "./" !default;
+$slick-arrow-color       : white !default;
+$slick-dot-color         : black !default;
+$slick-dot-color-active  : $slick-dot-color !default;
+$slick-prev-character    : "\2190" !default;
+$slick-next-character    : "\2192" !default;
+$slick-dot-character     : "\2022" !default;
+$slick-dot-size          : 6px !default;
+$slick-opacity-default   : 0.75 !default;
+$slick-opacity-on-hover  : 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
 .content-slider {
-    position: absolute;
+    position     : absolute;
     border-radius: 5px;
-    width: 100vw;
-    height: 190px;
-    min-width: 354px !important;
+    width        : 100vw;
+    height       : 190px;
+    min-width    : 354px !important;
 
 
 
     .slick-slider {
-        width: 100vw;
-        display: flex !important;
+        width          : 100vw;
+        display        : flex !important;
         justify-content: center;
-        align-items: center;
+        align-items    : center;
 
         .slick-list {
             .slick-slide {
                 width: 255px;
 
-                display: flex !important;
+                display        : flex !important;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
 
                 div {
-                    width: 255px;
-                    height: 155px;
-                    display: flex;
-                    align-items: center;
+                    // width          : 255px;
+                    // height         : 155px;
+                    display        : flex;
+                    align-items    : center;
                     justify-content: center;
 
                 }
@@ -53,13 +53,13 @@ $slick-opacity-not-active: 0.25 !default;
 
 
 .slick-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
     // height: 215px;
-    transform: scale(.9);
-    opacity: .4;
-    border-radius: 20px;
+    transform       : scale(.9);
+    opacity         : .4;
+    border-radius   : 20px;
     background-color: transparent !important;
 }
 
@@ -67,32 +67,32 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-slide {
     &.slick-active {
         transform: scale(1);
-        opacity: 1;
+        opacity  : 1;
     }
 }
 
 .slick-cloned {
     transform: scale(.9);
-    opacity: .4;
+    opacity  : .4;
 }
 
 .slick-prev,
 .slick-next {
     &::before {
-        color: white;
+        color    : white;
         font-size: 40px;
     }
 }
 
 
 .slick-prev {
-    left: 5px;
-    top: 155px !important;
+    left   : 5px;
+    top    : 155px !important;
     z-index: 3;
 
     [dir="rtl"] & {
-        left: auto;
-        right: -25px;
+        left  : auto;
+        right : -25px;
         // top: 355px !important;
     }
 
@@ -108,12 +108,12 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-next {
     right: 5px;
-    top: 155px !important;
+    top  : 155px !important;
 
     [dir="rtl"] & {
-        left: -25px;
+        left : -25px;
         right: auto;
-        top: 100px !important;
+        top  : 100px !important;
     }
 
     &:before {
@@ -132,37 +132,37 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-dots {
-    position: absolute;
-    bottom: -20px;
+    position  : absolute;
+    bottom    : -20px;
     list-style: none;
-    display: block;
+    display   : block;
     text-align: center;
     // padding: 0;
     // margin: 0;
-    width: 100%;
-    color: black;
+    width     : 100%;
+    color     : black;
 
     li {
         position: relative;
-        display: inline-block;
-        height: 20px;
-        width: 20px;
-        margin: -20px 5px;
-        padding: 0;
-        cursor: pointer;
+        display : inline-block;
+        height  : 20px;
+        width   : 20px;
+        margin  : -20px 5px;
+        padding : 0;
+        cursor  : pointer;
 
         button {
-            border: 0;
-            background: transparent;
-            display: block;
-            height: 20px;
-            width: 20px;
-            outline: none;
+            border     : 0;
+            background : transparent;
+            display    : block;
+            height     : 20px;
+            width      : 20px;
+            outline    : none;
             line-height: 0px;
-            font-size: 0px;
-            color: transparent;
-            padding: 5px;
-            cursor: pointer;
+            font-size  : 0px;
+            color      : transparent;
+            padding    : 5px;
+            cursor     : pointer;
 
             &:hover,
             &:focus {
@@ -175,26 +175,26 @@ $slick-opacity-not-active: 0.25 !default;
             }
 
             &:before {
-                position: absolute;
-                top: 0;
-                color: black !important;
-                left: 0;
+                position               : absolute;
+                top                    : 0;
+                color                  : black !important;
+                left                   : 0;
                 //opacity: 1;
-                content: "\2022";
-                width: 20px;
-                height: 20px;
-                font-family: $slick-font-family;
-                font-size: 6px;
-                line-height: 20px;
-                text-align: center;
-                -webkit-font-smoothing: antialiased;
+                content                : "\2022";
+                width                  : 20px;
+                height                 : 20px;
+                font-family            : $slick-font-family;
+                font-size              : 6px;
+                line-height            : 20px;
+                text-align             : center;
+                -webkit-font-smoothing : antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
         }
 
         &.slick-active button:before {
-            color: $slick-dot-color;
-            opacity: $slick-opacity-default;
+            color    : $slick-dot-color;
+            opacity  : $slick-opacity-default;
             font-size: 7px;
         }
     }

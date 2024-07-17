@@ -8,7 +8,7 @@ const SectionSix = () => {
       <div className="content-section-6">
         <div className="group-tag">
           <div className="title-tag">
-            <span className="text weg-1 benefit ">
+            <span className="text weg-1 benefit " >
               Ưu điểm nổi trội của MYS
             </span>
             <span className="text  content-benefit ">

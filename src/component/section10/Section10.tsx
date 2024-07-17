@@ -1,12 +1,14 @@
-import { FALSE } from "sass";
 import "./Section10.scss";
 import { useState } from "react";
+
+import iconSection10 from "../../assets/background/icon-bg-ten.89fbfafa.svg";
 
 const Section10 = () => {
   const [isOpen1, setOpen1] = useState(true);
   const [isOpen2, setOpen2] = useState(false);
   const [isOpen3, setOpen3] = useState(false);
   const [isOpen4, setOpen4] = useState(true);
+
   return (
     <div className="body-section-10">
       <div className="content-section-10">
@@ -16,13 +18,9 @@ const Section10 = () => {
             <div className="box-item">
               <div className="content-box">
                 <div className="top-content">
-                  <span className="text weg">
-                    MYS có dễ dàng sử dụng không?
-                  </span>
+                  <span className="text weg">MYS có dễ dàng sử dụng không?</span>
                   <button
-                    className={
-                      isOpen1 === true ? "btn-open active" : "btn-open"
-                    }
+                    className={isOpen1 === true ? "btn-open active" : "btn-open"}
                     onClick={() => setOpen1(!isOpen1)}
                   >
                     <i className={"fa-solid fa-chevron-right"}></i>
@@ -30,16 +28,13 @@ const Section10 = () => {
                 </div>
                 <div
                   className={
-                    isOpen1 === true
-                      ? "bottom-content active"
-                      : "bottom-content"
+                    isOpen1 === true ? "bottom-content active" : "bottom-content"
                   }
                 >
                   <p>
-                    Ứng dụng hoàn toàn thân thiện với người dùng, các tính năng
-                    được bố trí rõ ràng, logic giúp người dùng dễ dàng tương
-                    tác. Đội ngũ hỗ trợ 24/7 sẵn sàng giải đáp mọi thắc mắc của
-                    người dùng.
+                    Ứng dụng hoàn toàn thân thiện với người dùng, các tính năng được
+                    bố trí rõ ràng, logic giúp người dùng dễ dàng tương tác. Đội ngũ
+                    hỗ trợ 24/7 sẵn sàng giải đáp mọi thắc mắc của người dùng.
                   </p>
                 </div>
               </div>
@@ -47,13 +42,9 @@ const Section10 = () => {
             <div className="box-item">
               <div className="content-box">
                 <div className="top-content">
-                  <span className="text weg">
-                    MYS có trên những nền tảng nào?
-                  </span>
+                  <span className="text weg">MYS có trên những nền tảng nào?</span>
                   <button
-                    className={
-                      isOpen2 === true ? "btn-open active" : "btn-open"
-                    }
+                    className={isOpen2 === true ? "btn-open active" : "btn-open"}
                     onClick={() => setOpen2(!isOpen2)}
                   >
                     <i className="fa-solid fa-chevron-right"></i>
@@ -61,9 +52,7 @@ const Section10 = () => {
                 </div>
                 <div
                   className={
-                    isOpen2 === true
-                      ? "bottom-content active"
-                      : "bottom-content"
+                    isOpen2 === true ? "bottom-content active" : "bottom-content"
                   }
                 >
                   <p>
@@ -80,9 +69,7 @@ const Section10 = () => {
                 <div className="top-content">
                   <span className="text weg">Tính năng chính của MYS?</span>
                   <button
-                    className={
-                      isOpen3 === true ? "btn-open active" : "btn-open"
-                    }
+                    className={isOpen3 === true ? "btn-open active" : "btn-open"}
                     onClick={() => setOpen3(!isOpen3)}
                   >
                     <i className="fa-solid fa-chevron-right"></i>
@@ -90,15 +77,12 @@ const Section10 = () => {
                 </div>
                 <div
                   className={
-                    isOpen3 === true
-                      ? "bottom-content active"
-                      : "bottom-content"
+                    isOpen3 === true ? "bottom-content active" : "bottom-content"
                   }
                 >
                   <p>
-                    Xác lập, quản lý mục tiêu, người tham gia và dễ dàng theo
-                    dõi tiến độ, nhận thông báo mỗi khi có cập nhật, can thiệp
-                    kịp thời.
+                    Xác lập, quản lý mục tiêu, người tham gia và dễ dàng theo dõi
+                    tiến độ, nhận thông báo mỗi khi có cập nhật, can thiệp kịp thời.
                   </p>
                 </div>
               </div>
@@ -108,9 +92,7 @@ const Section10 = () => {
                 <div className="top-content">
                   <span className="text weg">Những ưu điểm của MYS?</span>
                   <button
-                    className={
-                      isOpen4 === true ? "btn-open active" : "btn-open"
-                    }
+                    className={isOpen4 === true ? "btn-open active" : "btn-open"}
                     onClick={() => setOpen4(!isOpen4)}
                   >
                     <i className="fa-solid fa-chevron-right"></i>
@@ -118,14 +100,12 @@ const Section10 = () => {
                 </div>
                 <div
                   className={
-                    isOpen4 === true
-                      ? "bottom-content active"
-                      : "bottom-content"
+                    isOpen4 === true ? "bottom-content active" : "bottom-content"
                   }
                 >
                   <p>
-                    Dễ sử dụng và tiện lợi, hỗ trợ trên mọi nền tảng, chi phí
-                    thấp, hiệu quả sử dụng cao và được hỗ trợ công nghệ AI
+                    Dễ sử dụng và tiện lợi, hỗ trợ trên mọi nền tảng, chi phí thấp,
+                    hiệu quả sử dụng cao và được hỗ trợ công nghệ AI
                   </p>
                 </div>
               </div>
@@ -136,12 +116,19 @@ const Section10 = () => {
           Chưa thể giải đáp những thắc mắc?
           <a
             style={{ textDecoration: "none", marginLeft: 7, color: "#2a6df5" }}
-            href="#section-2"
+            href="#contact"
           >
             Liên hệ với chúng tôi
           </a>
         </p>
       </div>
+      <img
+        alt="image-section-10"
+        src={iconSection10}
+        width={144}
+        height={82}
+        className="image-contain"
+      />
     </div>
   );
 };

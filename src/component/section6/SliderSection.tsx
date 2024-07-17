@@ -24,8 +24,8 @@ const SliderSection = ({ Data }: PropSlider) => {
     dots: true,
     initialSlide: 0,
 
-    // autoplay: true,
-    // autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     variableWidth: true,
     responsive: [
       {

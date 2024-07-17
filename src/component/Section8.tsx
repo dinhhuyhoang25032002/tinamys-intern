@@ -26,6 +26,7 @@ const Section8 = () => {
             alt="image-iphone-section-8"
             className="image-contain"
             src={imageIphone}
+            loading="lazy"
             width={"100%"}
             height={"100%"}
           />
