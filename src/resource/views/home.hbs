@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="body-homepage">
+    <ul>
+      {{#each data}}
+        <a href="/courses/{{this.slug}}">
+          <li>{{this.name}}</li>
+        </a>
+        <li>{{this.description}}</li>
+        <li>{{this.createdAt}}</li>
+        <li>{{this.updatedAt}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
